@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>Mapa 1 do trabalho de WebSIG</title>
+	<title>Mapa da peregrinação a Fátima- 2023</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,9 +36,9 @@
 
 	var map = L.map('map').setView([39.696927, -7.729808], 6);
 	
-	L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-	maxZoom: 16}).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19,}).addTo(map);
 
 	// control that shows state info on hover
 	var north = L.control({position: "topright"});
